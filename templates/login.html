@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block title %}Sign in{% endblock %}{% block content %}
+<section class="auth-card"><div class="eyebrow">CINEMA / FINDER</div><div class="auth-logo">▶</div><h1>Find your next<br><span>favourite film.</span></h1><p class="muted">Discover, organise and keep track of Tamil cinema.</p>
+<form method="post" class="form-stack"><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label><label>Password<input type="password" name="password" placeholder="Enter your password" required></label><button class="btn primary full">Sign in <span>→</span></button></form>
+<p class="auth-bottom">New to Cinema Finder? <a href="{{ url_for('register') }}">Create an account</a></p></section>{% endblock %}
